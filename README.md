@@ -42,7 +42,7 @@ Using this simple trick, you can now use ol api as-is without manually importing
 The following packages are required :
 
  - ol (from https://www.npmjs.com/package/ol ) : OpenLayers version matching ES2015 standards
- - @types/openlayers (from https://www.npmjs.com/package/@types/ol) : @types definition allowing autocompletion
+ - @types/ol (from https://www.npmjs.com/package/@types/ol) : @types definition allowing autocompletion
 
 # Installation
 If you wish to use this project as a template for your own project:
