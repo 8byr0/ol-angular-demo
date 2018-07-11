@@ -9,17 +9,20 @@ This demo empty application includes a wrapper to use ol library in an angular a
 
 Regarding openlayers documentation, here's the procedure to use their library in any angular application :
 
-  ` ...
+```javascript
+    ...
     import OlMap from 'ol/map'
     import OlView from 'ol/view'
-  ` ...
+    ...
+```
 
 That's a bit heavy when you're referring to online documentation and you've got to manually declare all the modules/classes you wish to use.
 
 # Solution
 I've been trying to make things as simple as possible to reach the result below :
 
-`    // In your component using openlayers
+```javascript
+    // In your component using openlayers
     import ol from './oldef' 
     
     ...
@@ -33,7 +36,8 @@ I've been trying to make things as simple as possible to reach the result below 
 		view:  new  ol.View({
 		center: [0, 0],
 		zoom:  2})
-	});`
+	});
+```
 
 Using this simple trick, you can now use ol api as-is without manually importing all the stuffs.
 
@@ -47,8 +51,14 @@ The following packages are required :
 # Installation
 If you wish to use this project as a template for your own project:
 
-`git clone https://github.com/hugrvr/ol-angular-demo.git # clone repo`
+```shell
+git clone https://github.com/hugrvr/ol-angular-demo.git # clone repo
+```
 
-`npm install --save # install required dependencies locally`
+```shell
+npm install --save # install required dependencies locally
+```
 
-`ng serve # run demo on http://localhost: 4200`
+```shell
+ng serve # run demo on http://localhost: 4200
+```
